@@ -1,0 +1,1542 @@
+{
+	"info": {
+		"_postman_id": "e6eec129-ddb6-473c-94c6-eb715f76b51f",
+		"name": "PT Indiga Nusa Digitama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "testing4",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "testing4@email.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "testing4",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/register",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "testing4",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "testing4@email.com",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "testing4",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/register",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 01:53:29 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 01:53:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"attributes\": {},\n        \"request\": {},\n        \"query\": {},\n        \"server\": {},\n        \"files\": {},\n        \"cookies\": {},\n        \"headers\": {}\n    },\n    \"message\": \"Account succesffuly registered\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "testing1@email.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "testing1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/login",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "testing1@email.com",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "testing1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/login",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 03:33:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 03:33:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"af4f2b67ec9a233364f8f5e80abb916fc98876e49b0ed16037c1ff28459a20c67b45fa14aa0d0f11\",\n        \"id\": 11,\n        \"name\": \"testing1\",\n        \"email\": \"testing1@email.com\"\n    },\n    \"message\": \"Successfully login\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/logout",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logout",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/logout",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 03:42:25 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 03:42:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Account successfully logout\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cookies 2",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/category-products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"category-products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Cookies 2",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/category-products",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"category-products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 04:44:47 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 04:44:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Cookies 2\"\n    },\n    \"message\": \"Data successfully created\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail data by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/category-products/1",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"category-products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail data by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/category-products/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"category-products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:22:18 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:22:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Category Product 1\",\n        \"created_at\": \"2022-11-10T04:47:10.000000Z\",\n        \"updated_at\": null,\n        \"delete_status\": 0\n    },\n    \"message\": \"Detail data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Index data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/category-products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"category-products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/category-products",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"category-products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:25:11 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:25:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Category Product 1\",\n            \"created_at\": \"2022-11-10T04:47:10.000000Z\",\n            \"updated_at\": null,\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Category Product 2\",\n            \"created_at\": \"2022-11-10T04:47:10.000000Z\",\n            \"updated_at\": null,\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Category Product 3\",\n            \"created_at\": \"2022-11-10T04:47:10.000000Z\",\n            \"updated_at\": null,\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Cookies\",\n            \"created_at\": \"2022-11-11T04:43:47.000000Z\",\n            \"updated_at\": \"2022-11-11T04:43:47.000000Z\",\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Cookies 2\",\n            \"created_at\": \"2022-11-11T04:44:47.000000Z\",\n            \"updated_at\": \"2022-11-11T04:44:47.000000Z\",\n            \"delete_status\": 0\n        }\n    ],\n    \"message\": \"Index data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update data by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cookies edit",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/category-products/4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"category-products",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update data by Id",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Cookies edit",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/category-products/4",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"category-products",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:30:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:30:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Cookies edit\"\n    },\n    \"message\": \"Data successfully updated\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete data by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/category-products/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"category-products",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete data by Id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/category-products/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"category-products",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:50:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 06:50:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Data successfully updated\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Update data by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "produk 4 edit",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "600000",
+									"type": "default"
+								},
+								{
+									"key": "product_category_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Kakek Ganteng/Downloads/punya faris/775094.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/products/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"products",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update data by Id",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "produk 4 edit",
+											"type": "default"
+										},
+										{
+											"key": "price",
+											"value": "600000",
+											"type": "default"
+										},
+										{
+											"key": "product_category_id",
+											"value": "2",
+											"type": "default"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Kakek Ganteng/Downloads/punya faris/775094.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/products/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"products",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:35:27 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:35:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 5,\n        \"product_category_id\": \"2\",\n        \"name\": \"produk 4 edit\",\n        \"price\": \"600000\",\n        \"image\": \"136241.png\",\n        \"created_at\": \"2022-11-11T08:35:27.000000Z\",\n        \"updated_at\": \"2022-11-11T08:35:27.000000Z\",\n        \"delete_status\": 0\n    },\n    \"message\": \"Data successfully updated\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "produk 6",
+									"type": "default"
+								},
+								{
+									"key": "price",
+									"value": "600000",
+									"type": "default"
+								},
+								{
+									"key": "product_category_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Kakek Ganteng/Downloads/punya faris/775094.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "produk 6",
+											"type": "default"
+										},
+										{
+											"key": "price",
+											"value": "600000",
+											"type": "default"
+										},
+										{
+											"key": "product_category_id",
+											"value": "1",
+											"type": "default"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Kakek Ganteng/Downloads/punya faris/775094.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/products",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:34:58 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:34:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"produk 6\",\n        \"product_category_id\": \"1\",\n        \"price\": \"600000\",\n        \"image\": \"126711.png\",\n        \"created_at\": \"2022-11-11T08:34:57.000000Z\",\n        \"updated_at\": \"2022-11-11T08:34:57.000000Z\",\n        \"id\": 7\n    },\n    \"message\": \"Data successfully created\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete data by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/products/6",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete data by Id",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/products/6",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"products",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:37:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:37:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Data successfully deleted\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Index",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/products",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:44:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:44:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"product_category_id\": 1,\n            \"name\": \"Product 1\",\n            \"price\": 848436,\n            \"image\": \"image1.jpg\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 2,\n            \"product_category_id\": 2,\n            \"name\": \"Product 2\",\n            \"price\": 330779,\n            \"image\": \"image2.jpg\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 3,\n            \"product_category_id\": 3,\n            \"name\": \"Product 3\",\n            \"price\": 639142,\n            \"image\": \"image3.jpg\",\n            \"created_at\": null,\n            \"updated_at\": null,\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 5,\n            \"product_category_id\": 2,\n            \"name\": \"produk 4 edit\",\n            \"price\": 600000,\n            \"image\": \"136241.png\",\n            \"created_at\": \"2022-11-11T08:35:27.000000Z\",\n            \"updated_at\": \"2022-11-11T08:35:27.000000Z\",\n            \"delete_status\": 0\n        },\n        {\n            \"id\": 7,\n            \"product_category_id\": 1,\n            \"name\": \"produk 6\",\n            \"price\": 600000,\n            \"image\": \"126711.png\",\n            \"created_at\": \"2022-11-11T08:34:57.000000Z\",\n            \"updated_at\": \"2022-11-11T08:34:57.000000Z\",\n            \"delete_status\": 0\n        }\n    ],\n    \"message\": \"Index data\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail data by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:{{port}}/api/products/5",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"products",
+								"5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail data by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:{{port}}/api/products/5",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "{{port}}",
+									"path": [
+										"api",
+										"products",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:45:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Nov 2022 08:45:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.0.23"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 5,\n        \"product_category_id\": 2,\n        \"name\": \"produk 4 edit\",\n        \"price\": 600000,\n        \"image\": \"136241.png\",\n        \"created_at\": \"2022-11-11T08:35:27.000000Z\",\n        \"updated_at\": \"2022-11-11T08:35:27.000000Z\",\n        \"delete_status\": 0\n    },\n    \"message\": \"Detail data\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
